@@ -1,16 +1,16 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
 
-describe("Test 1155 User Role", function () {
+describe("Test ERC5006", function () {
     let alice, bob, carl;
     let contract;
 
     beforeEach(async function () {
         [alice, bob, carl] = await ethers.getSigners();
 
-        const ERC1155WithUserRoleDemo = await ethers.getContractFactory("ERC1155WithUserRoleDemo");
+        const ERC5006Demo = await ethers.getContractFactory("ERC5006Demo");
 
-        contract = await ERC1155WithUserRoleDemo.deploy();
+        contract = await ERC5006Demo.deploy();
     });
 
     describe("", function () {

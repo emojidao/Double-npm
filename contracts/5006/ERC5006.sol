@@ -3,9 +3,9 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
-import "./IERC1155WithUserRole.sol";
+import "./IERC5006.sol";
 
-contract ERC1155WithUserRole is ERC1155, IERC1155WithUserRole {
+contract ERC5006 is ERC1155, IERC5006 {
     /**mapping(tokenId=>mapping(user=>amount)) */
     mapping(uint256 => mapping(address => uint256)) private _userAllowances;
 
