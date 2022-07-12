@@ -2,9 +2,9 @@
 
 pragma solidity ^0.8.0;
 
-import "./ERC1155WithUserRole.sol";
+import "./ERC5006.sol";
 
-contract ERC1155WithUserRoleDemo is ERC1155WithUserRole {
+contract ERC5006Demo is ERC5006 {
     function mint(
         address to,
         uint256 id,

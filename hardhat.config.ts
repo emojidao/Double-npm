@@ -44,11 +44,7 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    bscTestnet: {
-      url: process.env.BSCT_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
+    
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -58,46 +54,8 @@ const config: HardhatUserConfig = {
     apiKey: {
       mainnet: process.env.ETHERSCAN_API_KEY,
       rinkeby: process.env.ETHERSCAN_API_KEY,
-      bsc: process.env.BSC_API_KEY,
-      bscTestnet:process.env.BSC_API_KEY,
     }
   },
 };
-
-// module.exports = {
-//   solidity: {
-//     version: "0.8.9",
-//     settings: {
-//       optimizer: {
-//         enabled: true,
-//         runs: 200
-//       }
-//     }
-//   },
-//   networks: {
-//     ropsten: {
-//       url: process.env.ROPSTEN_URL || "",
-//       accounts:
-//         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-//     },
-//     rinkeby: {
-//       url: process.env.RINKEBY_URL || "",
-//       accounts:
-//         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-//     },
-//     bsct: {
-//       url: process.env.BSCT_URL || "",
-//       accounts:
-//         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-//     },
-//   },
-//   gasReporter: {
-//     enabled: process.env.REPORT_GAS !== undefined,
-//     currency: "USD",
-//   },
-//   etherscan: {
-//     apiKey: process.env.ETHERSCAN_API_KEY,
-//   },
-// };
 
 export default config;
