@@ -1,5 +1,12 @@
 {
-  "name": "hardhat-project",
+  "name": "double-contracts",
+  "version": "1.0.1",
+  "description": "Implementations of standards like ERC4907,ERC5006",
+  "keywords": [
+    "double","ERC4907","ERC5006"
+  ],
+  "author": "Double Developers",
+  "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",

@@ -1,46 +1,61 @@
-# Advanced Sample Hardhat Project
+# <img src="xhj.svg" alt="Double" height="40px">
 
-This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
+[![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.double.one/concepts/overview)
+[![NPM Package](Npm-logo.svg)](https://www.npmjs.com/package/double_npm)
+[![Github](github.svg)](https://github.com/emojidao/double_npm)
 
-The project comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts. It also comes with a variety of other tools, preconfigured to work with the project code.
 
-Try running some of the following tasks:
+**A library for secure smart contract development.** Build on a solid foundation of community-vetted code.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-npx hardhat help
-REPORT_GAS=true npx hardhat test
-npx hardhat coverage
-npx hardhat run scripts/deploy.ts
-TS_NODE_FILES=true npx ts-node scripts/deploy.ts
-npx eslint '**/*.{js,ts}'
-npx eslint '**/*.{js,ts}' --fix
-npx prettier '**/*.{json,sol,md}' --check
-npx prettier '**/*.{json,sol,md}' --write
-npx solhint 'contracts/**/*.sol'
-npx solhint 'contracts/**/*.sol' --fix
+ * Implementations of standards like [ERC4907](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4907.md) and [ERC5006](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5006.md).
+
+:mage: **Not sure how to get started?** Check out [Docs](https://docs.double.one/concepts/overview).
+
+## Overview
+
+### Installation
+
+```console
+$ npm install --save double-contracts
 ```
 
-# Etherscan verification
 
-To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
+### Usage
 
-In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
+Once installed, you can use the contracts in the library by importing them:
 
-```shell
-hardhat run --network ropsten scripts/deploy.ts
+```solidity
+pragma solidity ^0.8.0;
+
+import "double-contracts/contracts/4907/ERC4907.sol";
+
+contract ERC4907Demo is ERC4907 {
+
+    constructor(string memory name_, string memory symbol_)
+     ERC4907(name_,symbol_)
+     {         
+     }
+    ...
+
+} 
 ```
 
-Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
+_If you're new to smart contract development, head to [Developing Smart Contracts](https://docs.Double.com/learn/developing-smart-contracts) to learn about creating a new project and compiling your contracts._
 
-```shell
-npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
-```
+To keep your system secure, you should **always** use the installed code as-is, and neither copy-paste it from online sources, nor modify it yourself. The library is designed so that only the contracts and functions you use are deployed, so you don't need to worry about it needlessly increasing gas costs.
 
-# Performance optimizations
+## Learn More
 
-For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
+## Security
+
+This project is maintained by [Double](https://Double.one), and developed following our high standards for code quality and security. Double Contracts is meant to provide tested and community-audited code, but please use common sense when doing anything that deals with real money! We take no responsibility for your implementation decisions and any security problems you might experience.
+
+The core development principles and strategies that Double Contracts is based on include: security in depth, simple and modular code, clarity-driven naming conventions, comprehensive unit testing, pre-and-post-condition sanity checks, code consistency, and regular audits.
+
+## Contribute
+
+Double Contracts exists thanks to its contributors. There are many ways you can participate and help build high quality software.
+
+## License
+
+Double Contracts is released under the [MIT License](LICENSE).
