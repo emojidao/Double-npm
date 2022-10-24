@@ -1,9 +1,9 @@
 # <img src="xhj.svg" alt="Double" height="40px">
 
-[![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.double.one/concepts/overview)
-[![NPM Package](Npm-logo.svg)](https://www.npmjs.com/package/double_npm)
-[![Github](github.svg)](https://github.com/emojidao/double_npm)
-
+Published on : 
+[GitHub](https://github.com/emojidao/double-npm/tree/master);
+[Npm](https://www.npmjs.com/package/double-contracts);
+[Docs](https://docs.double.one/concepts/overview);
 
 **A library for secure smart contract development.** Build on a solid foundation of community-vetted code.
 
