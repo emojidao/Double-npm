@@ -3,13 +3,15 @@
   "version": "1.0.3",
   "description": "Implementations of standards like ERC4907,ERC5006",
   "keywords": [
-    "double","ERC4907","ERC5006"
+    "double",
+    "ERC4907",
+    "ERC5006"
   ],
   "author": "LanceSnow,Double Developers",
   "homepage": "https://github.com/emojidao/Double-npm",
   "repository": {
     "type": "git",
-    "url": "git@github.com:emojidao/Double-npm.git"
+    "url": "git+ssh://git@github.com/emojidao/Double-npm.git"
   },
   "license": "MIT",
   "devDependencies": {
