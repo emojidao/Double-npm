@@ -1,6 +1,6 @@
 {
   "name": "double-contracts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Implementations of standards like ERC4907,ERC5006",
   "keywords": [
     "double","ERC4907","ERC5006"
