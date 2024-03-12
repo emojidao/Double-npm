@@ -5,7 +5,12 @@
   "keywords": [
     "double","ERC4907","ERC5006"
   ],
-  "author": "Double Developers",
+  "author": "LanceSnow,Double Developers",
+  "homepage": "https://github.com/emojidao/Double-npm",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:emojidao/Double-npm.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
