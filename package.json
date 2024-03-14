@@ -1,6 +1,6 @@
 {
   "name": "double-contracts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Implementations of standards like ERC4907,ERC5006",
   "keywords": [
     "double","ERC4907","ERC5006"
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/emojidao/Double-npm",
   "repository": {
     "type": "git",
-    "url": "git://github.com:emojidao/Double-npm.git"
+    "url": "https://github.com/emojidao/Double-npm.git"
   },
   "license": "MIT",
   "devDependencies": {
